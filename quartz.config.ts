@@ -25,7 +25,7 @@ const config: QuartzConfig = {
       cdnCaching: true,
       typography: {
         header: "Spoqa Han Sans Neo",
-        body: "Spoqa Han Sans Neo",
+        body: "Gowun Dodum",
         code: "FiraCode",
       },
       colors: {
