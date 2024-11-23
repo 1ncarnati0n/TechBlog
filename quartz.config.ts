@@ -24,8 +24,8 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Spoqa Han Sans Neo",
-        body: "Gowun Dodum",
+        header: "Noto Sans Korean",
+        body: "Noto Sans Korean",
         code: "FiraCode",
       },
       colors: {
