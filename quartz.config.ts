@@ -26,7 +26,7 @@ const config: QuartzConfig = {
       typography: {
         header: "Spoqa Han Sans Neo",
         body: "Spoqa Han Sans Neo",
-        code: "FiraCode",
+        code: "Monoplex KR Wide Nerd",
       },
       colors: {
         lightMode: {
@@ -38,7 +38,7 @@ const config: QuartzConfig = {
           secondary: "#088a47",
           tertiary: "#84a59d",
           highlight: "#fff2cc",
-          textHighlight: "#FFD0FA",
+          textHighlight: "#ebeb97",
         },
         darkMode: {
           light: "#161618",
@@ -49,7 +49,7 @@ const config: QuartzConfig = {
           secondary: "#088a47",
           tertiary: "#84a59d",
           highlight: "#ffc000",
-          textHighlight: "#be95be",
+          textHighlight: "#858560",
         },
       },
     },
