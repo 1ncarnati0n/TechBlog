@@ -9,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "🪴자동화&건축",
-    pageTitleSuffix: "",
+    pageTitleSuffix: "AI&ComputationalDesign",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -24,8 +24,8 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Pretendard-Regular",
-        body: "Pretendard-Regular",
+        header: "Spoqa Han Sans Neo",
+        body: "Spoqa Han Sans Neo",
         code: "FiraCode",
       },
       colors: {
