@@ -1,18 +1,18 @@
 ---
-title: 컴퓨테이셔널 디자인 그리고 BIM
+title: Computational Desgin & BIM
 edits:
   - 2024-05-06
 tags:
 ---
-<br>
-
 👋👋👋 
 
 Computational Design, BIM, 건축 AI 활용에 대한 Tech Blog 입니다.
 
-Python, C#을 이용해 Grasshopper, Dynamo,  RevitAPI, 환경에서 자동화개발 
+Python, C#을 이용해 Grasshopper, Dynamo,  RevitAPI등 환경에서 자동화개발 
 
-그리고 기계학습(ML, DL, RL)등을 다룹니다.
+그리고 기본적인 기계학습 Machine Learning, 심층학습 Deep Learning 
+
+더 나아가 강화학습 Reinforcement learning을 다룹니다.
 
 <br>
 
