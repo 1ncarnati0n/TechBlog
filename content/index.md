@@ -1,5 +1,5 @@
 ---
-title: Computational Desgin & BIM
+title: 건축자동화 Tech Blog
 edits:
   - 2024-05-06
 tags:
