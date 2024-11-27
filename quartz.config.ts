@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴자동화&건축",
+    pageTitle: "🚀건축<sup>automata</sup>",
     pageTitleSuffix: ": Computational Design, Mechine Learning, Reinforcement Learning",
     enableSPA: true,
     enablePopovers: true,
