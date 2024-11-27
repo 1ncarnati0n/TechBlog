@@ -141,19 +141,6 @@ export const defaultImage: SocialImageOptions["imageStructure"] = (
   fonts: SatoriOptions["fonts"],
   _fileData: QuartzPluginData,
 ) => {
-  // 루트 경로일 때 정적 OG 이미지 사용
-  if (_fileData.slug === "/") {
-    return (
-      <img
-        src={`https://${cfg.baseUrl}/static/og-image.png`}
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-        }}
-      />
-    )
-  }
   // How many characters are allowed before switching to smaller font
   const fontBreakPoint = 22
   const useSmallerFont = title.length > fontBreakPoint
