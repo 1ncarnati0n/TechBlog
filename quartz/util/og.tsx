@@ -135,12 +135,25 @@ export type ImageOptions = {
 // This is the default template for generated social image.
 export const defaultImage: SocialImageOptions["imageStructure"] = (
   cfg: GlobalConfiguration,
-  { colorScheme }: UserOpts,
+  { useDefaultOgImage, defaultOgImage, colorScheme }: UserOpts, //colorScheme
   title: string,
   description: string,
   fonts: SatoriOptions["fonts"],
   _fileData: QuartzPluginData,
 ) => {
+  // 기본 소셜 이미지 추가부분
+  if (useDefaultOgImage && defaultOgImage) {
+    return (
+      <img
+        src={`https://${cfg.baseUrl}/static/og-image.png`}
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+        }}
+      />
+    )
+  }
   // How many characters are allowed before switching to smaller font
   const fontBreakPoint = 22
   const useSmallerFont = title.length > fontBreakPoint
