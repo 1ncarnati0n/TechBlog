@@ -9,6 +9,11 @@ aliases:
 
 "순차적 의사결정<sup>Sequential decision making</sup> 문제"는 결국 **MDP**<sup>Markov Decision Process</sup> 라는 개념을 통해서 정확하게 표현할 수 있다.
 
+<div style="text-align: center;"
+><img src ="https://velog.velcdn.com/images/1ncarnati0n/post/4d81d8f0-a5d1-4b30-867b-8749bcb78463/image.png" width = "460" /> 
+<p>| 아이가 잠이드는 Markov Process 그림 |</p>
+</div>
+
 $$ 
 MP \equiv (S, P)
 $$
@@ -26,7 +31,7 @@ $$
 P_{ss'} = \mathbb{P}[S_{t+1} = s'|S_t = s]
 $$
 
-전이 확률은 $s$ 와 $s'$ 에 대하여 행렬의 형태로 표현할 수 있다.
+	- 전이 확률은 $s$ 와 $s'$ 에 대하여 행렬의 형태로 표현할 수 있다.
 
 <br>
 
