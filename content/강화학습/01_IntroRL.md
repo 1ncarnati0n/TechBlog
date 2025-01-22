@@ -49,13 +49,14 @@ aliases:
 <div style="text-align: center;"
 ><img src ="https://velog.velcdn.com/images/1ncarnati0n/post/28369033-aa56-4fd4-8cd7-1737d9f50b49/image.png" width = "460" /> </div>
 
-1. 에이전트<sup>Agent</sup>로 부터 받은 행동 $a_t$ 를 통해서 상태 변화를 일으킴.
+1. 에이전트<sup>Agent</sup>로 부터 받은 행동 $a_t$ 를 통해서 상태 변화<sup>state transition</sup>를 일으킴.
 2. 그 결과 상태는 $s_t  \longrightarrow s_{t+1}$ 로 바뀜.
 3. 에이전트<sup>Agent</sup>에게 줄 보상 $r_{t+1}$ 도 함께 계산.
 4. $s_{t+1}$ 과 $r_{t+1}$ 을 에이전트<sup>Agent</sup>에게 전달.
+
 <br>
 
-- $s_t$ 에서 $a_t$ 시행 이를 통해 환경이 $s_{t+1}$ 로 바뀌면, <br>즉 **에이전트**<sup>Agent</sup>와 **환경**<sup>Environment</sup>이 한번 상호작용하면 하나의 루프<sup>loop</sup>가 끝남. <br>이를 ==틱==<sup>tick</sup>== 이 지났다고 표현한다.
+- $s_t$ 에서 $a_t$ 시행 이를 통해 환경이 $s_{t+1}$ 로 바뀌면, <br>즉 **에이전트**<sup>Agent</sup>와 **환경**<sup>Environment</sup>이 한번 상호작용하면 하나의 루프<sup>loop</sup>가 끝남. <br>이를 ==틱==<sup>tick</sup>이 지났다고 표현한다.
 
 - 실제 세계는 이를 시간의 흐름이 연속적<sup>continuous</sup>으로 보겠지만, <br>순차적 의사결정문제에서는 시간의 흐름을 이산적<sup>discrete</sup>으로 생각한다. <br>이를 ==타임 스텝==<sup>time step</sup>이라 한다.
 
