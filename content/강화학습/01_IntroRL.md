@@ -42,7 +42,7 @@ aliases:
 ==에이전트==<sup>Agent</sup>가 **액션**<sup>Action(행동)</sup>을 하고 그에 따라 **상황**<sup>state</sup> 이 변하는 것을 하나의 **루프**<sup>loop</sup> 라 했을 때 이 루프가 반복되는 것을 **순차적 의사결정<sup>Sequential decision making</sup> 문제**라 할 수 있다.
 
 
-1. 현재상황 $s_t$ 에서 어뗜 행동을 해야 할지 $a_t$ 를 결정
+1. 현재상황 $s_t$ 에서 어떤행동을 해야 할지 $a_t$ 를 결정
 2. 결정된 행동 $a_t$ 를 환경으로 보냄
 3. 환경으로부터 그에 따른 보상과 다음 상태의 정보를 받음
 
@@ -65,4 +65,3 @@ aliases:
 ### 강화학습의 위력
 - 병렬성
 - 자가학습 *self-learning* 
-
