@@ -9,7 +9,10 @@ aliases:
 **강화학습**은 **순차적 의사결정 문제**를 푸는 **방법론**.
 
 **순차적 의사결정 문제**<sup>Sequential decision making</sup>는 결국 **MDP**<sup>Markov Decision Process</sup> 라는 개념을 통해서 정확하게 표현할 수 있다.
-> $$MP \equiv (S, P)$$
+
+$$ 
+MP \equiv (S, P)
+$$
 - 상태의 집합 **S** <br>
 	$S= \{s_0, s_1, s_2, s_3, s_4 \}$
 
