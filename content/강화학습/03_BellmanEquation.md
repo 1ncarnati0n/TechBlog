@@ -58,7 +58,9 @@ $$
 $$
 v_\pi(s_t) = \mathbb{E}_\pi[r_{t+1}+\gamma v_\pi(s_{t+1})]
 $$
-$v_\pi(s_t) = \mathbb{E}_\pi[G_t]$ 
+$$
+v_\pi(s_t) = \mathbb{E}_\pi[G_t]
+$$ 
 
 
 **1 단계**
@@ -76,3 +78,5 @@ $v_\pi(s_t) = \mathbb{E}_\pi[G_t]$
 
 
 ### 벨만 최적 방정식
+
+
