@@ -267,13 +267,12 @@ $$
 
 
 • **상태 가치 함수**<sup>state value function</sup> <br>: 
+
 $$
-v_{\pi}(s) = \mathbb{E}_{\pi}[r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+...+|S_t = s ]
+v_{\pi}(s) = \mathbb{E}_{\pi}[r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+...|S_t = s ] \\ =\mathbb{E}_{\pi}[G_t|S_t=s]
 $$
-$$
-=\mathbb{E}_{\pi}[G_t|S_t=s] \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
-$$
-s부터 끝까지 $\pi$를 따라서 움직일 때 얻는 리턴의 기댓값
+
+$s$부터 끝까지 $\pi$를 따라서 움직일 때 얻는 리턴의 기댓값
 
 
 
