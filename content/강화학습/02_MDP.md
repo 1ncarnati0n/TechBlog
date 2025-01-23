@@ -286,12 +286,17 @@ $$
 
 ---
 
-
 <br>
 
 ## Prediction과 Control
 
 MDP를 푼다는 것은 MDP가 주어 졌을때 즉, $(S,A, P, R, \gamma)$ 가 주어졌을때 주된 테스크는 2가지가 있다.
 
-1. **Prediction** : 
-2. **Control** :
+1. **Prediction** : 정책 $π$ 가 주어졌을 때 각 상태 $s$의 밸류 $v_\pi(s)$를 평가하는 문제
+2. **Control** : 최적 정책 $π^*$ 를 찾는 문제  
+
+**최적 정책**<sup>optimal policy</sup> $\pi^*$을 찾거나, 임의의 정책 $π$에 대해 각 상태의 밸류 $v_π(s)$ 구하고자 하는 것.
+
+**최적 정책**<sup>optimal policy</sup> $\pi^*$ 를 따를 때의 가치 함수를 **최적 가치 함수**<sup>optimal value function</sup> $v^*$ 라고한다.
+
+$\pi^*$, $v^*$ 를 찾았다면 *"이 MDP는 풀렸다"* 고 할 수 있다.
