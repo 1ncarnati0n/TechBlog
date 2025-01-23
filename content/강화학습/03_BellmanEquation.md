@@ -27,6 +27,52 @@ $$
 
 <br>
 
-
 ### 벨만 기대 방정식
 
+> [!quote] 0 단계
+>$$
+>v_\pi(s_t) = \mathbb{E}_\pi[r_{t+1}+\gamma v_\pi(s_{t+1})]
+>$$
+>$$
+>q_\pi(s_t, a_t) = \mathbb{E}_\pi[r_{t+1}+\gamma q_\pi(s_{t+1},a_{t+1})]
+>$$
+
+> [!quote] 1 단계
+>$$
+>v_\pi(s) = \sum_{a \in A} \pi (a|s)q_\pi(s,a)
+>$$
+>$$
+>q_\pi(s, a) = r^a_s + \gamma \sum_{s' \in S}P^a_{ss'}v_{\pi}(s')
+>$$
+
+> [!quote] 2 단계
+>$$
+>v_\pi(s) = \sum_{a \in A}\pi(a|s) \left(r^a_s + \gamma \sum_{s'\in S} P^a_{ss'}v_\pi(s') \right)
+>$$
+>$$
+>q_\pi(s, a) = r^a_s + \gamma \sum_{s' \in S}P^a_{ss'} \sum_{a' \in A} \pi(a'|s')q_\pi(s', a')
+>$$
+
+
+**0 단계**
+$$
+v_\pi(s_t) = \mathbb{E}_\pi[r_{t+1}+\gamma v_\pi(s_{t+1})]
+$$
+$v_\pi(s_t) = \mathbb{E}_\pi[G_t]$ 
+
+
+**1 단계**
+
+**2 단계**
+
+
+
+
+## 벨만 최적 방정식
+
+### 최적 밸류와 최적 정책
+
+
+
+
+### 벨만 최적 방정식
