@@ -266,14 +266,20 @@ $$
 $$
 
 
-• **상태 가치 함수**<sup>state value function</sup> <br>: 
+• **상태 가치 함수**<sup>state value function</sup> 
+MRP에서 *상태 가치 함수* 와 비슷하나 에이전트<sup>agent</sup> 및 액션<sup>action</sup>이 포함되어 정책<sup>policy</sup>을 반영해야 한다.
 
 $$
-v_{\pi}(s) = \mathbb{E}_{\pi}[r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+...|S_t = s ] \\ =\mathbb{E}_{\pi}[G_t|S_t=s]
+v_{\pi}(s) = \mathbb{E}_{\pi}[r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+...|S_t = s ] \\ =\mathbb{E}_{\pi}[G_t|S_t=s] \ \ \ \ \ \ \ \ \ \
 $$
+<center>s부터 끝까지 π를 따라서 움직일 때 얻는 리턴의 기댓값</center>
 
-$s$부터 끝까지 $\pi$를 따라서 움직일 때 얻는 리턴의 기댓값
+<br>
 
+• **액션 가치 함수**<sup>state-action value function</sup>
 
+$$
+\mathrm{q}_{\pi}(s,a)=\mathbb{E}_\pi[G_t|S_t = s, A_t=a]
+$$
+<center>s에서 a를 선택하고, 그 이후에는 π를 따라서 움직일 때 얻는 리턴의 기댓값</center>
 
-• **액선 가치 함수**<sup>state-action value function</sup> <br>: 
