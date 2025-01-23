@@ -270,7 +270,7 @@ $$
 MRP에서 *상태 가치 함수* 와 비슷하나 에이전트<sup>agent</sup> 및 액션<sup>action</sup>이 포함되어 정책<sup>policy</sup>을 반영해야 한다.
 
 $$
-v_{\pi}(s) = \mathbb{E}_{\pi}[r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+...|S_t = s ] \\ =\mathbb{E}_{\pi}[G_t|S_t=s] \ \ \ \ \ \ \ \ \ \
+v_{\pi}(s) = \mathbb{E}_{\pi}[r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+...|S_t = s ] \\ =\mathbb{E}_{\pi}[G_t|S_t=s] \ 
 $$
 <center>s부터 끝까지 π를 따라서 움직일 때 얻는 리턴의 기댓값</center>
 
@@ -283,3 +283,15 @@ $$
 $$
 <center>s에서 a를 선택하고, 그 이후에는 π를 따라서 움직일 때 얻는 리턴의 기댓값</center>
 
+
+---
+
+
+<br>
+
+## Prediction과 Control
+
+MDP를 푼다는 것은 MDP가 주어 졌을때 즉, $(S,A, P, R, \gamma)$ 가 주어졌을때 주된 테스크는 2가지가 있다.
+
+1. **Prediction** : 
+2. **Control** :
