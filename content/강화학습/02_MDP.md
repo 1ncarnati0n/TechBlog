@@ -3,17 +3,17 @@ title: 2. 마르코프 결정 프로세스
 aliases:
   - MDP
 ---
-## 마르코프 프로세스
+## 2.1 마르코프 프로세스
 
-강화학습은 "순차적 의사결정 문제"를 푸는 "방법론".<br>"순차적 의사결정<sup>Sequential decision making</sup> 문제"는 결국 **MDP**<sup>Markov Decision Process</sup> 라는 개념을 통해서 정확하게 표현할 수 있다.
+**강화학습**은 =="순차적 의사결정 문제"를 푸는 "방법론".== <br>"순차적 의사결정<sup>Sequential decision making</sup> 문제"는 결국 **MDP**<sup>Markov Decision Process</sup> 라는 개념을 통해서 정확하게 표현할 수 있다.
 
 <div style="text-align: center;"
 ><img src ="https://velog.velcdn.com/images/1ncarnati0n/post/4d81d8f0-a5d1-4b30-867b-8749bcb78463/image.png" width = "460" /> 
-<p>| 아이가 잠이드는 Markov Process 그림 |</p>
+<p>| 아이가 잠이드는 Markov Process |</p>
 </div>
 <br>
 
-> [!Note ]
+> [!quote] Markov Process
 >$$ 
 >MP \equiv (S, P)
 >$$
@@ -46,7 +46,7 @@ $$
 | 눈감음($s_2$)  |           |            |            | 0.7         | 0.3        |
 | 잠이 옴($s_3$) |           |            |            |             | 1.0        |
 | 잠 듦($s_4$)  |           |            |            |             | 1.0        |
- <center>| 전이확률행렬 표 |</center>
+ <center>| 전이 확률 행렬, 표 |</center>
 
 <br>
 
@@ -60,7 +60,8 @@ $$
 
 <br>
 
-- **마르코프한 상태** <sup>Markovian state</sup> <br>
+- **마르코프한 상태** <sup>Markovian state</sup>
+
 	시스템의 다음 상태가 **오직 현재 상태**에 의해서만 결정될 때, 그 상태를 마르코프한 상태라고 한다. 즉, 과거의 상태는 미래의 상태에 아무런 영향을 미치지 않는다는 의미.
 	
 	ex) 
@@ -87,7 +88,7 @@ $$
 <br>
 
 
-## 마르코프 리워드 프로세스
+## 2.2 마르코프 리워드 프로세스
 마르코프 프로세스에 보상의 개념이 추가되면 **마르코프 리워드 프로세스**<sup>Markov Reward Process</sup> 가 된다.
 
 <div style="text-align: center;"
@@ -159,26 +160,30 @@ $s_0$ 에서 $s_T$ 까지 가는 하나의 여정을 에피소드라 했다. 그
 ### 상태 가치 함수
 State Value Function
 
-> [!Note ]
+> [!quote] State Value Function 
 >
 >$$
 >v(s) = \mathbb{E}[G_t|S_t=s]
 >$$
 ><div style="text-align: center;"> 상태 s로부터 시작하여 얻는 리턴의 기댓값 " </div>
+> 
 
 
 - - -
 
 <br>
 
-## 마르코프 결정 프로세스
+## 2.3 마르코프 결정 프로세스
 MP와 MRP에서는 상태 변화가 자동으로 이루어졌다. 다음 상태의 분포는 미리 정해진 확률에 이미 정해져 있다. 
 그러므로 MP, MRP 로는 순차적 의사 결정 문제를 모델링 할 수 가 없다. <br>순차적 의사 결정 문제는 **의사 결정**이 **핵심**이며, 이를 위해 **에이전트**가 등장한다. 
 
 ### MDP의 정의
-$$
-MDP \equiv (S,A,P,R,\gamma)
-$$
+
+> [!Quote] Markov Decision Process
+>$$
+>MDP \equiv (S,A,P,R,\gamma)
+>$$
+
 
 • **상태의 집합** $S$ <br>마르코프 프로세스<sup>MP</sup>, 마르코프 보상 프로세스<sup>MRP</sup> 에서의 $S$ 와 같다.
 
@@ -220,7 +225,7 @@ $$
 
 위 도표를 보면 상태 $s_2$ 에서 $a_1$행동을 취한다면 그 **전이 확률**을 아래 수식과 같이 표현할 수 있다.
 
-> [!Note ]
+> [!quote] 전이 확률
 >
 >$$
 >P^{a_{1}}_{s_{2}, s_0} = 0.3 ,  
@@ -236,14 +241,14 @@ $$
 <p>| 보다 복잡해진 아이 재우기 MDP 그림 |</p>
 </div>
 
-강화 학습에서 결국 찾고자 하는 것은 <br>각 상태 $s$ 에서 어떤 액션 $a$ 를 선택해야 보상의 합을 최대로 할 수 있는가 이다. <br>이를 **정책** <sup>Policy</sup> 이라고 한다.
+강화 학습에서 결국 찾고자 하는 것은 <br>각 상태 $s$ 에서 어떤 액션 $a$ 를 선택해야 **보상**의 **합**을 **최대**로 할 수 있는가 이다. <br>이를 **정책**<sup>Policy</sup> 이라고 한다.
 
 <br>
 
 ### 정책 함수와 2가지 가치 함수
 • **정책 함수**<sup>policy function</sup> <br>: 각 상태에서 어떤 액션을 선택할지 정해주는 함수.
 
-> [!Note ]
+> [!Quote] policy function
 >
 >$$
 >\pi(a|s) = \mathbb{P}[A_t=a|S_t=s]
@@ -269,26 +274,31 @@ $$
 • **상태 가치 함수**<sup>state value function</sup> 
 MRP에서 *상태 가치 함수* 와 비슷하나 에이전트<sup>agent</sup> 및 액션<sup>action</sup>이 포함되어 정책<sup>policy</sup>을 반영해야 한다.
 
-$$
-v_{\pi}(s) = \mathbb{E}_{\pi}[r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+...|S_t = s ] \\ =\mathbb{E}_{\pi}[G_t|S_t=s] \ 
-$$
-<center>s부터 끝까지 π를 따라서 움직일 때 얻는 리턴의 기댓값</center>
+> [!quote] state value function
+>$$
+>v_{\pi}(s) = \mathbb{E}_{\pi}[r_{t+1}+\gamma r_{t+2}+\gamma^2 r_{t+3}+...|S_t = s ] \\ =\mathbb{E}_{\pi}[G_t|S_t=s] \ 
+>$$
+>
+>: $s$ 부터 끝까지 $π$ 를 따라서 움직일 때 얻는 리턴의 기댓값
+>
+>
 
 <br>
 
 • **액션 가치 함수**<sup>state-action value function</sup>
 
-$$
-\mathrm{q}_{\pi}(s,a)=\mathbb{E}_\pi[G_t|S_t = s, A_t=a]
-$$
-<center>s에서 a를 선택하고, 그 이후에는 π를 따라서 움직일 때 얻는 리턴의 기댓값</center>
+> [!quote] state-action value function
+>$$
+>\mathrm{q}_{\pi}(s,a)=\mathbb{E}_\pi[G_t|S_t = s, A_t=a]
+>$$
+>$s$ 에서 $a$ 를 선택하고, 그 이후에는 $π$ 를 따라서 움직일 때 얻는 리턴의 기댓값
 
 
 ---
 
 <br>
 
-## Prediction과 Control
+## 3.4 Prediction과 Control
 
 MDP를 푼다는 것은 MDP가 주어 졌을때 즉, $(S,A, P, R, \gamma)$ 가 주어졌을때 주된 테스크는 2가지가 있다.
 
