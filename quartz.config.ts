@@ -23,8 +23,8 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Spoqa Han Sans Neo",
-        body: "Spoqa Han Sans Neo",
+        header: "Noto Sans KR",
+        body: "Noto Sans KR",
         code: "Monoplex KR Wide Nerd",
       },
       colors: {
