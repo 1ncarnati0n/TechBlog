@@ -84,7 +84,7 @@ print(building._Building__area)  # 5000 - 이름 맹글링으로 접근 가능
 <br>
 ### 6. 프로퍼티 사용하기
 
-파이썬에서는 ==`@property` 데코레이터==를 사용하여 ==캡슐화==를 더 우아하게 구현할 수 있습니다:
+파이썬에서는 `@property` 데코레이터를 사용하여 캡슐화를 더 우아하게 구현할 수 있습니다:
 
 ```python
 class Building:

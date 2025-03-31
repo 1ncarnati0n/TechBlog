@@ -20,6 +20,7 @@ class 자식클래스(부모클래스):
 ```
 
 **간단한 상속 예제**
+
 ```python
 class GeometricObject:
     """기하학적 객체의 기본 클래스"""
@@ -104,6 +105,7 @@ child.method_child()   # 자식 클래스 메서드
 
 **다중 상속**<sup>Multiple Inheritance</sup>
 파이썬은 한 클래스가 여러 부모 클래스를 상속받을 수 있는 다중 상속을 지원합니다.
+
 ```python
 class Material:
     def __init__(self, material_type="일반"):
@@ -139,6 +141,7 @@ print(sculpture.get_info())  # 조각품: 사상가, 재질: 돌, 색상: 회색
 
 **다단계 상속**<sup>Multilevel Inheritance</sup>
 자식 클래스가 또 다른 클래스의 부모 클래스가 되는 상속 체인입니다.
+
 ```python
 class Grandparent:
     def method_grandparent(self):
@@ -161,8 +164,10 @@ child.method_child()        # 자식 클래스 메서드
 
 <br>
 ### 3. 메서드 오버라이딩 
+
 **Method Overriding**
 자식 클래스에서 부모 클래스의 메서드를 같은 이름으로 재정의하는 것을 메서드 오버라이딩이라고 합니다.
+
 ```python
 class Shape:
     def __init__(self, name):
@@ -203,8 +208,10 @@ print(rect.describe())  # 이것은 직사각형입니다. 너비는 5, 높이�
 
 
 ### 4. 메서드 해결 순서 
+
 **Method Resolution Order, MRO**
 파이썬은 다중 상속에서 메서드를 찾을 때 메서드 해결 순서(MRO)를 사용합니다. MRO는 C3 선형화 알고리즘을 기반으로 하며, 클래스의 `__mro__` 속성이나 `mro()` 메서드를 통해 확인할 수 있습니다.
+
 ```python
 class A:
     def method(self):
@@ -231,6 +238,7 @@ MRO는 왼쪽에서 오른쪽으로 클래스 계층을 탐색하므로, `D` 클
 ### 5. 추상 기본 클래스와 상속
 
 추상 기본 클래스(Abstract Base Class, ABC)는 직접 인스턴스화할 수 없고, 다른 클래스가 구현해야 하는 메서드를 정의하는 템플릿입니다.
+
 ```python
 from abc import ABC, abstractmethod
 
@@ -332,6 +340,7 @@ print(f"기둥의 안전 여유(100kN 하중): {column.get_safety_margin(100):.2
 ### 6. 컴퓨테이셔널 디자인에서의 상속 응용
 
 컴퓨테이셔널 디자인 분야에서 상속을 활용하는 복잡한 예제를 살펴보겠습니다. 이 예제는 파라메트릭 건축 요소를 모델링하는 시스템입니다.
+
 ```python
 from abc import ABC, abstractmethod
 import math
@@ -596,6 +605,7 @@ kinetic.animate(0.5, 3.0)  # 3초 동안 반열림 상태로 애니메이션
 ### 7. 강화학습과 상속
 
 강화학습에서 상속을 활용하는 예제:
+
 ```python
 from abc import ABC, abstractmethod
 import random
