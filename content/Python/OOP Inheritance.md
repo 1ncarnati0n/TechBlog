@@ -2,13 +2,15 @@
 title: "객체지향 3 : 상속"
 tags:
 ---
-**파이썬 객체지향 프로그래밍 상속**<sup>Inheritance</sup>
+**파이썬 객체지향 프로그래밍**: **상속**<sup>Inheritance</sup>
 
 상속은 객체지향 프로그래밍의 4대기둥 중 하나로, 기존 클래스의 속성과 메서드를 새로운 클래스가 재사용할 수 있게 하는 메커니즘입니다. 상속을 통해 코드 재사용성을 높이고, 계층적인 관계를 만들며, 공통된 특성을 효율적으로 관리할 수 있습니다.
 
+<br>
+
 ### 1. 상속의 기본 개념
 
-상속에서는 기존 클래스(부모 클래스 또는 기본 클래스)의 특성을 새로운 클래스(자식 클래스 또는 파생 클래스)가 물려받습니다. 자식 클래스는 부모 클래스의 모든 속성과 메서드를 상속받으며, 추가적인 속성과 메서드를 정의하거나 부모의 메서드를 재정의할 수 있습니다.
+상속에서 기존 클래스(부모 클래스 또는 기본 클래스)의 특성을 새로운 클래스(자식 클래스 또는 파생 클래스)가 물려받습니다. 자식 클래스는 부모 클래스의 모든 속성과 메서드를 상속받으며, 추가적인 속성과 메서드를 정의하거나 부모의 메서드를 재정의할 수 있습니다.
 
 **기본 상속 구문**
 ```python
@@ -20,7 +22,6 @@ class 자식클래스(부모클래스):
 ```
 
 **간단한 상속 예제**
-
 ```python
 class GeometricObject:
     """기하학적 객체의 기본 클래스"""
@@ -78,10 +79,11 @@ print(circle)   # 반지름: 5.0, 색상: 빨간색, 채우기: 아니오
 print(f"면적: {circle.get_area():.2f}")       # 면적: 78.54
 print(f"둘레: {circle.get_perimeter():.2f}")  # 둘레: 31.42
 ```
-
 이 예제에서 `Circle` 클래스는 `GeometricObject` 클래스를 상속받았습니다. 
 따라서 `Circle`은 부모 클래스의 모든 메서드(`get_color`, `set_color` 등)를 사용할 수 있으며, 
 고유한 메서드(`get_radius`, `get_area` 등)도 정의합니다.
+
+<br>
 
 ### 2. 상속의 종류
 
@@ -105,7 +107,6 @@ child.method_child()   # 자식 클래스 메서드
 
 **다중 상속**<sup>Multiple Inheritance</sup>
 파이썬은 한 클래스가 여러 부모 클래스를 상속받을 수 있는 다중 상속을 지원합니다.
-
 ```python
 class Material:
     def __init__(self, material_type="일반"):
@@ -141,7 +142,6 @@ print(sculpture.get_info())  # 조각품: 사상가, 재질: 돌, 색상: 회색
 
 **다단계 상속**<sup>Multilevel Inheritance</sup>
 자식 클래스가 또 다른 클래스의 부모 클래스가 되는 상속 체인입니다.
-
 ```python
 class Grandparent:
     def method_grandparent(self):
@@ -163,11 +163,11 @@ child.method_child()        # 자식 클래스 메서드
 ```
 
 <br>
+
 ### 3. 메서드 오버라이딩 
 
 **Method Overriding**
 자식 클래스에서 부모 클래스의 메서드를 같은 이름으로 재정의하는 것을 메서드 오버라이딩이라고 합니다.
-
 ```python
 class Shape:
     def __init__(self, name):
@@ -201,17 +201,15 @@ rect = Rectangle(5, 4)
 print(rect.area())      # 20
 print(rect.describe())  # 이것은 직사각형입니다. 너비는 5, 높이는 4입니다.
 ```
-
 **super() 함수**
 `super()` 함수는 부모 클래스의 메서드를 호출할 때 사용합니다. 이는 메서드 오버라이딩을 할 때 부모 클래스의 기능을 확장하는 데 유용합니다.
 
-
+<br>
 
 ### 4. 메서드 해결 순서 
 
 **Method Resolution Order, MRO**
 파이썬은 다중 상속에서 메서드를 찾을 때 메서드 해결 순서(MRO)를 사용합니다. MRO는 C3 선형화 알고리즘을 기반으로 하며, 클래스의 `__mro__` 속성이나 `mro()` 메서드를 통해 확인할 수 있습니다.
-
 ```python
 class A:
     def method(self):
@@ -235,10 +233,11 @@ print(D.__mro__)  # (<class '__main__.D'>, <class '__main__.B'>, <class '__main_
 ```
 MRO는 왼쪽에서 오른쪽으로 클래스 계층을 탐색하므로, `D` 클래스의 인스턴스에서 `method()`를 호출하면 `B`의 메서드가 실행됩니다.
 
+<br>
+
 ### 5. 추상 기본 클래스와 상속
 
 추상 기본 클래스(Abstract Base Class, ABC)는 직접 인스턴스화할 수 없고, 다른 클래스가 구현해야 하는 메서드를 정의하는 템플릿입니다.
-
 ```python
 from abc import ABC, abstractmethod
 
@@ -605,7 +604,6 @@ kinetic.animate(0.5, 3.0)  # 3초 동안 반열림 상태로 애니메이션
 ### 7. 강화학습과 상속
 
 강화학습에서 상속을 활용하는 예제:
-
 ```python
 from abc import ABC, abstractmethod
 import random
@@ -1093,6 +1091,7 @@ class Penguin(NonFlyingBird):
         print("펭귄이 걷습니다.")
 ```
 
+<br>
 
 ### 10. 결론
 
