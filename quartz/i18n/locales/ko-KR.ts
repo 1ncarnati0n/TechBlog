@@ -33,10 +33,10 @@ export default {
       title: "리더 모드",
     },
     explorer: {
-      title: "------",
+      title: "글",
     },
     footer: {
-      createdWith: "Created with",
+      createdWith: "Created by",
     },
     graph: {
       title: "그래프 뷰",
