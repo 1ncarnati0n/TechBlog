@@ -113,6 +113,7 @@ button.desktop-explorer {
   overflow: hidden;
   overflow-y: auto;
   margin-top: 0.5rem;
+  font-size: 0.85rem;
 
   & ul {
     list-style: none;
@@ -121,13 +122,17 @@ button.desktop-explorer {
     overscroll-behavior: contain;
 
     & li > a {
+      font-family: var(--headerFont);
+      font-weight: normal;
       color: var(--dark);
       opacity: 0.75;
       pointer-events: all;
 
       &.active {
+        font-family: var(--headerFont);
+        font-weight: $semiBoldWeight;
         opacity: 1;
-        background-color: var(--highlight);
+        text-decoration: underline;
       }
     }
   }
@@ -159,14 +164,14 @@ button.desktop-explorer {
   & div > a {
     color: var(--secondary);
     font-family: var(--headerFont);
-    font-size: 0.95rem;
-    font-weight: $semiBoldWeight;
+    font-size: 0.9rem;
+    font-weight: $normalWeight;
     line-height: 1.5rem;
     display: inline-block;
   }
 
   & div > a:hover {
-    background-color: var(--highlight);
+    text-decoration: underline
   }
 
   & div > button {
@@ -182,7 +187,7 @@ button.desktop-explorer {
     font-family: var(--headerFont);
 
     & span {
-      font-size: 0.95rem;
+      font-size: 0.85rem;
       display: inline-block;
       color: var(--secondary);
       font-weight: $semiBoldWeight;
@@ -207,7 +212,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
 }
 
 .folder-icon:hover {
-  color: var(--tertiary);
+  color: var(--gray);
 }
 
 .explorer {

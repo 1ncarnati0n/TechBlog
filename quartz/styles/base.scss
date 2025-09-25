@@ -15,7 +15,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: var(--light);
-  font-family: var(--bodyFont);
+  font-family: var(--bodyFont), serif;
   color: var(--darkgray);
 }
 
@@ -80,7 +80,9 @@ article {
 }
 
 strong {
-  font-weight: $semiBoldWeight;
+  font-weight: bolder;
+  -webkit-text-stroke-width: 0.3px; /* 외곽선 두께 */
+  -webkit-text-stroke-color: var(--dark); /* 외곽선 색상 */
 }
 
 a {
