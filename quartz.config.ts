@@ -29,26 +29,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#00541bff",
-          tertiary: "#abff1aff",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff874ff",
+          light: "#f1eee6", //배경
+          lightgray: "#e0ded8ff", //보조 배경
+          gray: "#383838ff",
+          darkgray: "#333333ff", // 글색
+          dark: "#111111ff", // 제목 색
+          secondary: "#000000ff", // 강조 색 
+          tertiary: "#e5b8a9", //블럭
+          highlight: "#e5b8a9",
+          textHighlight: "#fffb35", //하이라이트
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
+          light: "#292929ff",  // 배경
+          lightgray: "#000000ff", // 보조 배경
           gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#18d754ff",
-          tertiary: "#abff1aff",
+          darkgray: "#d4d4d4", // 글색
+          dark: "#ffffffff",  // 제목 색
+          secondary: "#ffffffff", // 강조 색
+          tertiary: "#e5b8a9",
           highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff874ff",
+          textHighlight: "#fffc3555",
         },
       },
     },
