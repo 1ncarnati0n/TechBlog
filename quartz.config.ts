@@ -35,9 +35,9 @@ const config: QuartzConfig = {
           darkgray: "#333333ff", // 글색
           dark: "#111111ff", // 제목 색
           secondary: "#000000ff", // 강조 색 
-          tertiary: "#e5b8a9", //블럭
-          highlight: "#e5b8a9",
-          textHighlight: "#fffb35", //하이라이트
+          tertiary: "#006753", //블럭
+          highlight: "#cbcadb",
+          textHighlight: "#e5b8a9", //하이라이트
         },
         darkMode: {
           light: "#292929ff",  // 배경
@@ -47,8 +47,8 @@ const config: QuartzConfig = {
           dark: "#ffffffff",  // 제목 색
           secondary: "#ffffffff", // 강조 색
           tertiary: "#e5b8a9",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fffc3555",
+          highlight: "#cbcadb",
+          textHighlight: "#e5b8a96a",
         },
       },
     },
