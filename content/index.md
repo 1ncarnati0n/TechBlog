@@ -16,5 +16,5 @@ Python, C#을 이용해 Grasshopper, Dynamo, Revit API 환경 등에서 자동�
 
 <br>
 
-<p align='center'><img src = "https://raw.githubusercontent.com/1ncarnati0n/OptimisingFacadeML/main/assets/img01.png" width="640"></p>
+<p align='center'><img src = "https://velog.velcdn.com/images/1ncarnati0n/post/e4982e3f-b635-4b17-a054-f34c244cdffc/image.png" width="720"></p>
 
