@@ -40,7 +40,7 @@
   &[data-callout] {
     --color: #448aff;
     --border: #448aff44;
-    --bg: #448aff10;
+    --bg: var(--lightgray);
     --callout-icon: var(--callout-icon-note);
   }
 
@@ -116,8 +116,8 @@
   }
 
   &[data-callout="quote"] {
-    --color: var(--secondary);
-    --border: var(--lightgray);
+    --color: var(--gray);
+    --border: var(--darkgray);
     --callout-icon: var(--callout-icon-quote);
   }
 

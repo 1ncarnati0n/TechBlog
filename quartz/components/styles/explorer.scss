@@ -127,7 +127,7 @@ button.desktop-explorer {
 
       &.active {
         opacity: 1;
-        color: var(--tertiary);
+        background-color: var(--highlight);
       }
     }
   }
@@ -146,7 +146,7 @@ button.desktop-explorer {
     overflow: hidden;
     margin-left: 6px;
     padding-left: 0.8rem;
-    border-left: 1px solid var(--lightgray);
+    border-left: 1px solid var(--darkgray);
   }
 }
 
@@ -166,7 +166,7 @@ button.desktop-explorer {
   }
 
   & div > a:hover {
-    color: var(--tertiary);
+    background-color: var(--highlight);
   }
 
   & div > button {

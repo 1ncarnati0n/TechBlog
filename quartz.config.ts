@@ -30,14 +30,14 @@ const config: QuartzConfig = {
       colors: {
         lightMode: {
           light: "#f1eee6", //배경
-          lightgray: "#e0ded8ff", //보조 배경
-          gray: "#383838ff",
-          darkgray: "#333333ff", // 글색
+          lightgray: "#ffffffff", //보조 배경
+          gray: "#aaaaaaff",
+          darkgray: "#222222ff", // 글색
           dark: "#111111ff", // 제목 색
           secondary: "#000000ff", // 강조 색 
-          tertiary: "#006753", //블럭
+          tertiary: "#e5b8a9", //블럭
           highlight: "#cbcadb",
-          textHighlight: "#e5b8a9", //하이라이트
+          textHighlight: "#eacfc1", //하이라이트
         },
         darkMode: {
           light: "#292929ff",  // 배경
