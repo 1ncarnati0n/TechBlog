@@ -8,15 +8,15 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "choraAutomata Arch🏛️Tech🤖",
-    pageTitleSuffix: "",
+    pageTitle: "choraAutomata",
+    pageTitleSuffix: "Computational Design in Architecture",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "1ncarnati0n.github.io",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -24,8 +24,8 @@ const config: QuartzConfig = {
       cdnCaching: true,
       typography: {
         header: "Noto Sans KR",
-        body: "Gowun Batang",
-        code: "IBM Plex Mono",
+        body: "Noto Serif KR",
+        code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
