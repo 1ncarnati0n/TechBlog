@@ -543,15 +543,17 @@ p {
 th {
   text-align: left;
   padding: 0.4rem 0.7rem;
-  border-bottom: 2px solid var(--gray);
+  border-bottom: 1px solid var(--dark);
 }
 
 td {
+  font-family: var(--codeFont);
   padding: 0.2rem 0.7rem;
 }
 
 tr {
-  border-bottom: 1px solid var(--darkgray);
+  font-family: var(--codeFont);
+  border-bottom: 1px solid var(--gray);
   &:last-child {
     border-bottom: none;
   }
