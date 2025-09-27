@@ -82,6 +82,8 @@ print(f"둘레: {circle.get_perimeter():.2f}")  # 둘레: 31.42
 따라서 `Circle`은 부모 클래스의 모든 메서드(`get_color`, `set_color` 등)를 사용할 수 있으며, 
 고유한 메서드(`get_radius`, `get_area` 등)도 정의합니다.
 
+<br>
+
 ### 2. 상속의 종류
 
 **단일 상속**<sup>Single Inheritance</sup>
@@ -160,6 +162,7 @@ child.method_child()        # 자식 클래스 메서드
 ```
 
 <br>
+
 ### 3. 메서드 오버라이딩 
 **Method Overriding**
 자식 클래스에서 부모 클래스의 메서드를 같은 이름으로 재정의하는 것을 메서드 오버라이딩이라고 합니다.
@@ -195,12 +198,14 @@ class Rectangle(Shape):
 rect = Rectangle(5, 4)
 print(rect.area())      # 20
 print(rect.describe())  # 이것은 직사각형입니다. 너비는 5, 높이는 4입니다.
+
 ```
 
 **super() 함수**
 `super()` 함수는 부모 클래스의 메서드를 호출할 때 사용합니다. 이는 메서드 오버라이딩을 할 때 부모 클래스의 기능을 확장하는 데 유용합니다.
 
 
+<br>
 
 ### 4. 메서드 해결 순서 
 **Method Resolution Order, MRO**
@@ -227,6 +232,8 @@ print(d.method()) # B의 메서드
 print(D.__mro__)  # (<class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>, <class 'object'>)
 ```
 MRO는 왼쪽에서 오른쪽으로 클래스 계층을 탐색하므로, `D` 클래스의 인스턴스에서 `method()`를 호출하면 `B`의 메서드가 실행됩니다.
+
+<br>
 
 ### 5. 추상 기본 클래스와 상속
 
@@ -807,7 +814,7 @@ dq_agent.save_model("dq_agent.h5")
 
 이러한 상속 구조는 강화학습 알고리즘을 실험하고 비교하는 데 유용합니다.
 
----
+
 
 <br>
 
