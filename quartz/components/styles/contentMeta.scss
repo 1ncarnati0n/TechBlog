@@ -1,10 +1,12 @@
 .content-meta {
+  font-style: var(--codeFont);
+  font-size: 0.85rem;
   margin-top: 0;
-  color: var(--darkgray);
+  color: var(--gray);
 
   &[show-comma="true"] {
     > *:not(:last-child) {
-      margin-right: 8px;
+      margin-right: 12px;
 
       &::after {
         content: ",";
