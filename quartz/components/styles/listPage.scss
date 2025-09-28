@@ -24,8 +24,10 @@ li.section-li {
     }
 
     & .meta {
+      font-size: 0.9rem;
+      font-style: var(--codeFont);
       margin: 0 1em 0 0;
-      opacity: 0.6;
+      opacity: 0.8;
     }
   }
 }
