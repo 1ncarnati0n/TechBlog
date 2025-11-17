@@ -1,8 +1,13 @@
 ---
 title: git command note
 ---
-- **git init** : 현재 디렉토리를 Git이 관리하는 프로젝트 디렉토리(=working directory)로 설정하고 그 안에 레포지토리(.git 디렉토리) 생성
-- **git config** **user.name 'userid'** : 현재 사용자의 아이디를 'userid'으로 설정(커밋할 때 필요한 정보)
+
+ `git init`  
+ 현재 디렉토리를 Git이 관리하는 프로젝트 디렉토리(=working directory)로 설정하고 그 안에 레포지토리(.git 디렉토리) 생성
+ 
+`git config user.name 'userid'` 
+현재 사용자의 아이디를 'userid'으로 설정(커밋할 때 필요한 정보)
+
 - **git config user.email 'user@gmail.com'** : 현재 사용자의 이메일 주소를 'user@gmail.com'로 설정(커밋할 때 필요한 정보)
 - **git add [파일 이름]** : 수정사항이 있는 특정 파일을 staging area에 올리기
 - **git add [디렉토리명]** : 해당 디렉토리 내에서 수정사항이 있는 모든 파일들을 staging area에 올리기
@@ -29,3 +34,9 @@ title: git command note
     (3) working directory도 특정 커밋처럼 리셋(--hard는 여기까지 수행)
     그리고 이때 커밋 아이디 대신 HEAD의 위치를 기준으로 한 표기법(예 : HEAD^, HEAD~3)을 사용해도 됨
 - **git tag [태그 이름] [커밋 아이디]** : 특정 커밋에 태그를 붙임
+-  **git branch [새 브랜치 이름]**: 새로운 브랜치를 생성
+- **git checkout -b [새 브랜치 이름]**: 새로운 브랜치를 생성하고 그 브랜치로 바로 이동
+- **git branch -d [기존 브랜치 이름]**: 브랜치 삭제
+- **git checkout [기존 브랜치 이름]**: 그 브랜치로 이동
+- **git merge [기존 브랜치 이름]**: 현재 브랜치에 다른 브랜치를 머지
+- **git merge --abort**: 머지를 하다가 conflict가 발생했을 때, 일단은 머지 작업을 취소하고 이전 상태로 돌아감
