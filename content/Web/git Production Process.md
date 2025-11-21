@@ -1,9 +1,6 @@
 
 
-## 초기 설정
-
-bash
-
+### 초기 설정
 ```bash
 # 로컬에 모든 브랜치 가져오기
 git fetch --all
@@ -12,10 +9,7 @@ git fetch --all
 git branch -a
 ```
 
-## 1. 새 기능 개발 시작
-
-bash
-
+### 1. 새 기능 개발 시작
 ```bash
 # dev 브랜치로 이동하여 최신 상태로 업데이트
 git checkout dev
@@ -27,10 +21,7 @@ git checkout -b feature/gantt-chart-integration
 # 작업 진행...
 ```
 
-## 2. Dev 환경으로 배포
-
-bash
-
+### 2. Dev 환경으로 배포
 ```bash
 # 개발 완료 후 커밋
 git add .
@@ -53,10 +44,7 @@ git push origin dev
 # Dev 환경 배포 확인 후 테스트
 ```
 
-## 3. Staging 환경으로 승격
-
-bash
-
+### 3. Staging 환경으로 승격
 ```bash
 # dev에서 테스트 완료 후 staging으로 이동
 git checkout staging
@@ -75,10 +63,7 @@ git push origin staging
 # Staging 환경에서 최종 QA 테스트 진행
 ```
 
-## 4. Production 배포
-
-bash
-
+### 4. Production 배포
 ```bash
 # staging 테스트 완료 후 main으로 이동
 git checkout main
@@ -95,20 +80,14 @@ git tag -a v1.0.0 -m "Release version 1.0.0"
 git push origin v1.0.0
 ```
 
-## 5. 정리 작업
-
-bash
-
+### 5. 정리 작업
 ```bash
 # feature 브랜치 삭제 (선택사항)
 git branch -d feature/gantt-chart-integration  # 로컬 삭제
 git push origin --delete feature/gantt-chart-integration  # 원격 삭제
 ```
 
-## 6. 긴급 수정 (Hotfix)
-
-bash
-
+### 6. 긴급 수정 (Hotfix)
 ```bash
 # main에서 hotfix 브랜치 생성
 git checkout main
@@ -141,10 +120,7 @@ git branch -d hotfix/critical-bug-fix
 git push origin --delete hotfix/critical-bug-fix
 ```
 
-## 7. 여러 기능을 동시에 개발할 때
-
-bash
-
+### 7. 여러 기능을 동시에 개발할 때
 ```bash
 # 개발자 A: feature-A 작업
 git checkout dev
@@ -171,10 +147,7 @@ git merge --no-ff feature/dashboard
 git push origin dev
 ```
 
-## 8. Pull Request 사용 시 (GitHub/GitLab)
-
-bash
-
+### 8. Pull Request 사용 시 (GitHub/GitLab)
 ```bash
 # feature 브랜치 push
 git push origin feature/gantt-chart-integration
@@ -189,10 +162,7 @@ git checkout dev
 git pull origin dev
 ```
 
-## 유용한 명령어
-
-bash
-
+### Appendix: 유용한 명령어
 ```bash
 # 현재 브랜치 상태 확인
 git status
@@ -215,10 +185,7 @@ git checkout 올바른브랜치
 git stash pop  # 변경사항 복원
 ```
 
-## 권장 Commit Message 컨벤션
-
-bash
-
+### Appendix: 권장 Commit Message 컨벤션
 ```bash
 feat: 새로운 기능 추가
 fix: 버그 수정
@@ -235,12 +202,3 @@ git commit -m "refactor: Optimize project data fetching logic"
 ```
 
 이 프로세스를 따르면 각 환경에서 충분한 테스트를 거쳐 안전하게 프로덕션에 배포할 수 있습니다.
-
-재시도
-
-[Claude는 실수를 할 수 있습니다.  
-응답을 반드시 다시 확인해 주세요.](https://support.anthropic.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on)
-
-  
-
-Sonnet 4.5
