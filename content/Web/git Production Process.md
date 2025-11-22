@@ -1,4 +1,7 @@
 
+**dev**  >>  **staging**  >>  **main** <sup>( Production ) </sup>절차 git 관리 프로세스
+
+<br> 
 
 ### 초기 설정
 ```bash
