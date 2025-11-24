@@ -1,5 +1,6 @@
 
-**dev**  >>  **staging**  >>  **main** <sup>( Production ) </sup>절차 git 관리 프로세스
+> [!quote]  brench 단계별 git 관리 프로세스
+> **dev**  >>  **staging**  >>  **main** <sup>( Production ) </sup>
 
 <br> 
 
