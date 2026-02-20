@@ -2,13 +2,13 @@
 # Day 3-5: Ownership - 핵심 요약
 
 ## ✅ 학습 완료 항목
-- [x] "왜 Rust는 ownership이 필요한가?" 설명 가능
-- [x] Move 후 왜 사용할 수 없는지 이해
-- [x] 어떤 타입이 Copy인지 판단 가능
-- [x] Python의 reference counting과 차이점 설명 가능
-- [x] Stack vs Heap 메모리 모델 이해
-- [x] String의 내부 구조 이해
-- [x] 함수와 소유권 이동 패턴 이해
+- [ ] "왜 Rust는 ownership이 필요한가?" 설명 가능
+- [ ] Move 후 왜 사용할 수 없는지 이해
+- [ ] 어떤 타입이 Copy인지 판단 가능
+- [ ] Python의 reference counting과 차이점 설명 가능
+- [ ] Stack vs Heap 메모리 모델 이해
+- [ ] String의 내부 구조 이해
+- [ ] 함수와 소유권 이동 패턴 이해
 
 ---
 
